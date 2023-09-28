@@ -1,5 +1,15 @@
-# paradigmas
+# Paradigmas
 
+## Ejemplo de Control de Peticiones a un Servidor con Paralelismo en Go
+
+### Introducción
+En este ejemplo, exploraremos cómo gestionar peticiones a un servidor utilizando el lenguaje de programación Go. En particular, destacaremos cómo Go implementa la concurrencia y cómo podemos aplicar el paralelismo para evitar la saturación de recursos al definir un límite en la cantidad de solicitudes simultáneas.
+
+### Aplicando Paralelismo para Evitar Saturación
+En el código proporcionado, se muestra un ejemplo de cómo aplicar el paralelismo para evitar la saturación al procesar múltiples solicitudes a un servidor. En lugar de enviar todas las solicitudes al servidor de una vez, limitamos la cantidad de solicitudes simultáneas utilizando un canal con búfer y goroutines. Esto permite que las solicitudes se procesen en paralelo, pero con un límite definido en la cantidad de solicitudes que se envían simultáneamente.
+
+
+### Código
 ```go
 package main
 
