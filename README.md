@@ -97,6 +97,4 @@ func sequentialProcessRequests(requestIDs []int) {
 ```
 
 #### Playground
-```
-https://go.dev/play/
-```
+<https://go.dev/play/>
