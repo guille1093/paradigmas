@@ -95,3 +95,8 @@ func sequentialProcessRequests(requestIDs []int) {
 	}
 }
 ```
+
+#### Playground
+```
+https://go.dev/play/
+```
