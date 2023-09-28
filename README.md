@@ -8,6 +8,10 @@ En este ejemplo, exploraremos cómo gestionar peticiones a un servidor utilizand
 ### Aplicando Paralelismo para Evitar Saturación
 En el código proporcionado, se muestra un ejemplo de cómo aplicar el paralelismo para evitar la saturación al procesar múltiples solicitudes a un servidor. En lugar de enviar todas las solicitudes al servidor de una vez, limitamos la cantidad de solicitudes simultáneas utilizando un canal con búfer y goroutines. Esto permite que las solicitudes se procesen en paralelo, pero con un límite definido en la cantidad de solicitudes que se envían simultáneamente.
 
+El paralelismo aquí radica en que múltiples solicitudes se procesan al mismo tiempo, lo que puede aprovechar la capacidad de múltiples núcleos de CPU para acelerar el procesamiento. Al mismo tiempo, la concurrencia se logra mediante el uso de goroutines y canales para gestionar el flujo de trabajo de manera eficiente.
+
+
+
 
 ### Código
 ```go
